@@ -18,7 +18,7 @@ Open two terminals.
     INFO: Run server on address: 127.0.0.1, port: 43378
 	Controller runs on 127.0.0.1 43378
 
-	# 1nd phase
+	# 1st phase
 
 	Enter host:
 
@@ -43,7 +43,7 @@ Back to 1st terminal, type pserver's `host` and `port`.
     INFO: Run server on address: 127.0.0.1, port: 43378
 	Controller runs on 127.0.0.1 43378
 
-	# 1nd phase
+	# 1st phase
 
 	Enter host: 127.0.0.1
 	Enter port: 52608

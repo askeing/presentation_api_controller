@@ -1,6 +1,10 @@
 Release History
 ---------------
 
+0.0.3 (2015-10-26)
+++++++++++++++++++
+- Fix typo and pep8.
+
 0.0.2 (2015-10-26)
 ++++++++++++++++++
 - Add the first phase of controller.

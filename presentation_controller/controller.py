@@ -63,7 +63,7 @@ class PresentationApiController(object):
 
     def get_socket(self):
         return self.sock
-    
+
     def get_conn_addr(self):
         return self.conn_addr
 
@@ -105,9 +105,8 @@ if __name__ == "__main__":
     controller_port = controller.get_port()
     print('Controller runs on {} {}'.format(controller_host, controller_port))
 
-
     # First Phase
-    print('\n# 1nd phase\n')
+    print('\n# 1st phase\n')
     print('\rEnter host: '),
     pre_action_host = sys.stdin.readline().strip()
     print('\rEnter port: '),
@@ -127,7 +126,6 @@ if __name__ == "__main__":
 
     # close socket
     controller.finish_pre_action()
-
 
     # Second Phase
     print('\n# 2nd phase\n')
