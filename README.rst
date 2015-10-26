@@ -7,19 +7,46 @@ Presentation API Controller for MCTS.
 Example
 -------
 
-Run controller.
+Open two terminals.
+
+1st terminal run controller.
 
 .. code-block:: bash
 
+    // Terminal One
     $ python presentation_controller/controller.py
-    Controller runs on 127.0.0.1 38244
+    INFO: Run server on address: 127.0.0.1, port: 43378
+	Controller runs on 127.0.0.1 43378
 
-And then run test client.
+	# 1nd phase
+
+	Enter host:
+
+
+And 2nd terminal run test presentation server.
 
 .. code-block:: bash
 
-    $ python test/client.py
-    Enter host: 127.0.0.1
-    Enter port: 38244
+    // Terminal Two
+    $ python test/pserver.py
+    # 1st phase
 
-Then they will talk.
+	[1st] Run server on address: 127.0.0.1, port: 52608
+
+
+Back to 1st terminal, type pserver's `host` and `port`.
+
+.. code-block:: bash
+
+    // Terminal One
+    $ python presentation_controller/controller.py
+    INFO: Run server on address: 127.0.0.1, port: 43378
+	Controller runs on 127.0.0.1 43378
+
+	# 1nd phase
+
+	Enter host: 127.0.0.1
+	Enter port: 52608
+
+
+Then they will talk to each other.
