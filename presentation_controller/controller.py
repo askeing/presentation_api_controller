@@ -15,6 +15,7 @@ class PresentationApiController(object):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.bind(('localhost', 0))
         self.addr, self.port = self.sock.getsockname()
+        self.sock.listen(1)
         logger.info('Run server on address: {}, port: {}'.format(self.addr, self.port))
 
     def set_pre_action(self, pre_action_host, pre_action_port):
@@ -51,7 +52,6 @@ class PresentationApiController(object):
         """
         for 2nd phase
         """
-        self.sock.listen(1)
         self.conn, (self.conn_addr, self.conn_port) = self.sock.accept()
         logger.info('Connected by {} {}'.format(self.conn_addr, self.conn_port))
 
