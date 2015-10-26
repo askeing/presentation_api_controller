@@ -1,6 +1,10 @@
 Release History
 ---------------
 
+0.0.4 (2015-10-26)
+++++++++++++++++++
+- Listen the socket when init the controller.
+
 0.0.3 (2015-10-26)
 ++++++++++++++++++
 - Fix typo and pep8.
