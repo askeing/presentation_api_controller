@@ -1,6 +1,10 @@
 Release History
 ---------------
 
+0.0.5 (2015-10-26)
+++++++++++++++++++
+- Modify the init method to specify the host ip address.
+
 0.0.4 (2015-10-26)
 ++++++++++++++++++
 - Listen the socket when init the controller.

@@ -3,17 +3,18 @@
 import socket
 import logging
 
+
 logger = logging.getLogger(__name__)
 
 
 class PresentationApiController(object):
 
-    def __init__(self):
+    def __init__(self, host='localhost'):
         """
         Start socket, listen for connection, accept connection.
         """
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.sock.bind(('localhost', 0))
+        self.sock.bind((host, 0))
         self.addr, self.port = self.sock.getsockname()
         self.sock.listen(1)
         logger.info('Run server on address: {}, port: {}'.format(self.addr, self.port))
