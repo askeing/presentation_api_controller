@@ -1,7 +1,7 @@
 Presentation API Controller
 ===========================
 
-Presentation API Controller for MCTS.
+Presentation API Controller for `MCTS <https://github.com/mozilla-b2g/fxos-certsuite>`_ 2.5.
 
 
 Example
